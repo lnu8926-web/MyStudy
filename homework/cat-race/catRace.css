@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.gameBox {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  width: 450px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+select,
+button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+#gameStart {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#startRaceBtn {
+  margin-top: 15px;
+}
+
+#catsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.track {
+  position: relative;
+  height: 60px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.track span {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.track img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  transition: left linear;
+}
+
+#raceResult {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#restartBtn {
+  margin-top: 10px;
+  display: none;
+}

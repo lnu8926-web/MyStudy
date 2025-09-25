@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>고양이 달리기</title>
+    <link rel="stylesheet" href="./catRace.css" />
   </head>
   <body>
-    <h1>고양이 달리기</h1>
+    <div class="gameBox">
+      <h1>고양이 달리기 🐱</h1>
+      <div id="createCat">
+        <select id="numCatsSelect">
+          <option value="" selected>고양이 수 선택</option>
+          <option value="1">1마리</option>
+          <option value="2">2마리</option>
+          <option value="3">3마리</option>
+          <option value="4">4마리</option>
+          <option value="5">5마리</option>
+        </select>
+        <button id="createBtn" disabled>고양이 참가</button>
+        <span></span>
+      </div>
 
-    <label for="numCats">뛸 고양이 수: </label>
-    <select id="numCats"></select>
+      <div id="gameStart">
+        <h2>고양이 준비!!</h2>
+        <div id="catsContainer"></div>
+        <button id="startRaceBtn">출발!!</button>
+        <div id="raceResult"></div>
+        <button id="restartBtn">다시하기 🔄</button>
+      </div>
+    </div>
 
-    <button id="createBtn">생성</button>
-    <script src="catRace.js"></script>
+    <script src="./catRace.js"></script>
   </body>
 </html>
