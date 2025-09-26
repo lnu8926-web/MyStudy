@@ -1,0 +1,25 @@
+/* 기본 틀 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*
+css에서 이미지 넣는 방법
+배경 이미지를 지정할 때 사용, 정적인 이미지에 적합
+background-image: url(이미지 경로);
+*/
+
+.background {
+  width: 1024px;
+  height: 600px;
+  background-image: url("../img/background.png");
+  padding: 20px 0 0 20px;
+}
+
+.outerBox {
+  width: 808px;
+  height: 544px;
+  background-image: url("../img/outerBox.png");
+}
